@@ -1,0 +1,46 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "sourceMap": false,
+
+    // 构建配置
+    "baseUrl": ".", // import的相对起始路径
+    "outDir": "./dist", // 构建输出目录
+
+    // 零碎配置
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true, // 打开import x from 'x'的功能而不必使用import * as x from 'x'
+    "experimentalDecorators": true, // 打开装饰器功能
+    "emitDecoratorMetadata": true, // 打开元数据功能
+    "importHelpers": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+
+    // 严格模式
+    "strict": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "strictPropertyInitialization": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "noUnusedParameters": true,
+    "noUnusedLocals": true,
+    "noImplicitReturns": true,
+    "alwaysStrict": true,
+    "lib": [
+      "dom",
+      "es5",
+      "scripthost",
+      "es2015.promise"
+    ]
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
